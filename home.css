@@ -83,3 +83,27 @@ footer img{
   padding-top: 15px;
   padding-right: 30px;
 }
+ul{
+  overflow: hidden;
+
+}
+h1{
+  font-family: 'ABeeZee';
+  color: grey;
+}
+li{
+  float: left;
+  list-style-type: none;
+  margin-right:5%;
+  margin-bottom: 2.5%;
+}
+li img{
+  width: 350px;
+  border-style: solid;
+  border-color: #01d277;
+  border-width: medium;
+}
+li img:hover{
+  opacity: 0.5;
+  border-color: grey;
+}

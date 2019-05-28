@@ -1,0 +1,85 @@
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header{
+  background-color: #01d277;
+  overflow: hidden;
+width: 100%;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+
+
+}
+ p.logo{
+   float: left;
+  font-family: 'Sofia';
+  font-size: 25px;
+  color: white;
+  padding-left: 15px;
+ }
+ a.linkgeneros{
+   float: right;
+   color: white;
+  text-decoration: none;
+  font-family: 'ABeeZee';
+  font-size: 20px;
+  padding-top: 25px;
+ }
+ a.linkgeneros:hover{
+   text-decoration: underline;
+ }
+ form.buscador{
+   float: right;
+  padding-top: 25px;
+
+/* IDEA: porque me queda generop a la izq del buscador. lo quiero al reves */
+ }
+form.buscador input.buscar{
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+  border-radius: 20px;
+  height: 30px;
+  width: 170px;
+  padding-right: 25px;
+  /* IDEA: COMO EDITO PARA QUE EL PLACEHOLDER QUEDE EN EL MEDIO? */
+}
+form.buscador input.buscar:hover{
+  border-color: grey;
+  background-color: white;
+}
+
+footer{
+  width: 100%;
+  overflow:hidden;
+
+  height: 15vh;
+  background-color: white ;
+  border-radius: 20px;
+  border-top-color: #01d277;
+  border-bottom-color: white;
+  border-left-color: #01d277;
+  border-right-color: #01d277;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 20px;
+}
+footer p{
+  font-family: 'ABeeZee';
+  font-size: 15px;
+  font-style: italic;
+  float: left;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+footer img{
+  width: 75px;
+  float: right;
+  padding-top: 15px;
+  padding-right: 30px;
+}

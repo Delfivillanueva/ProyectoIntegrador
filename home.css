@@ -44,8 +44,7 @@ z-index: 10;
  }
  div.derecha{
    float: right;
-   width: 25%;
-
+   width: 29%;
    overflow: hidden;
  }
 form.buscador input.buscar{
@@ -69,6 +68,18 @@ form.buscador input.buscar:hover{
   border-color: grey;
   border-width: medium;
 }
+div a.login{
+  font-family: 'ABeeZee';
+  font-size: 20px;
+  color: white;
+  padding-top: 27px;
+  text-decoration: none;
+  float: left;
+  padding-right: 15px;
+}
+div a.login:hover{
+  text-decoration: underline;
+}
 
 footer{
   width: 100%;
@@ -81,13 +92,12 @@ footer{
   border-left-color: #01d277;
   border-right-color: #01d277;
   border-style: solid;
-  border-width: thin;
+  border-width: medium;
   margin-top: 20px;
 }
 footer p{
   font-family: 'ABeeZee';
   font-size: 15px;
-  font-style: italic;
   float: left;
   padding-top: 15px;
   padding-left: 20px;
@@ -100,10 +110,17 @@ footer img{
 }
 ul{
   overflow: hidden;
+  padding-left: 0;
 }
 h1{
   font-family: 'ABeeZee';
   color: grey;
+  background-image: url("fondo.jpg");
+  text-align: center;
+  height: 100px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin-left:0;
 }
 h1.peliculaspopulares{
  margin-top: 100px;
@@ -111,8 +128,9 @@ h1.peliculaspopulares{
 li{
   float: left;
   list-style-type: none;
-  margin-right:5%;
+  margin-right:4%;
   margin-bottom: 2.5%;
+    padding-left: 35px;
 }
 li img{
   width: 350px;

@@ -4,12 +4,11 @@ body {
   border: 0;
   padding: 0;
   width: 100%;
-
 }
 
 header{
-  background-color: #01d277;
-  overflow: hidden;
+background-color: #01d277;
+overflow: hidden;
 width: 100%;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
@@ -22,29 +21,32 @@ z-index: 10;
    float: left;
   font-family: 'Sofia';
   font-size: 25px;
-  color: black;
+  color: white;
   padding-left: 15px;
  }
  a.linkgeneros{
-   float: left;
-   color: black;
+   color: white;
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
-  padding-top: 25px;
+  padding-top: 27px;
+  float: left;
  }
  a.linkgeneros:hover{
    text-decoration: underline;
  }
- img.lupa{
-   float: right;
-   padding-top: 2.5%;
- }
- form.buscador{
-   float: right;
-  padding-top: 25px;
 
-/* IDEA: porque me queda generop a la izq del buscador. lo quiero al reves */
+ form.buscador{
+  padding-top: 25px;
+  float: right;
+  padding-right: 20px;
+
+ }
+ div.derecha{
+   float: right;
+   width: 25%;
+
+   overflow: hidden;
  }
 form.buscador input.buscar{
   border-style: solid;
@@ -56,15 +58,15 @@ form.buscador input.buscar{
   padding-right: 25px;
   /* IDEA: COMO EDITO PARA QUE EL PLACEHOLDER QUEDE EN EL MEDIO? */
 }
-img.lupa:focus{
-  form.buscador:display;
-  /* IDEA: COMO HACEMOS PARA QUE APAREZCA EL FORM BUSCADOR */
+form.buscador input.buscar:hover{
+  border-style:solid;
+  border-color: grey;
+  border-width: medium;
 }
 
 footer{
   width: 100%;
   overflow:hidden;
-
   height: 15vh;
   background-color: white ;
   border-radius: 20px;
@@ -92,11 +94,13 @@ footer img{
 }
 ul{
   overflow: hidden;
-
 }
 h1{
   font-family: 'ABeeZee';
   color: grey;
+}
+h1.peliculaspopulares{
+ margin-top: 100px;
 }
 li{
   float: left;

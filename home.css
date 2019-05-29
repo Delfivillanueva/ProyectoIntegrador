@@ -56,7 +56,13 @@ form.buscador input.buscar{
   height: 30px;
   width: 170px;
   padding-right: 25px;
-  /* IDEA: COMO EDITO PARA QUE EL PLACEHOLDER QUEDE EN EL MEDIO? */
+}
+input.buscar::placeholder{
+text-align: center;
+  font-family: 'ABeeZee';
+  font-size: 20px;
+  margin: auto;
+  /* IDEA: NO QUEDA EN EL MEDIO BROOOOO */
 }
 form.buscador input.buscar:hover{
   border-style:solid;

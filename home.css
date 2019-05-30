@@ -4,14 +4,13 @@ body {
   border: 0;
   padding: 0;
   width: 100%;
+  background-color: #eeeeee;
 }
 
 header{
-background-color: #01d277;
+background-color: #ff4949;
 overflow: hidden;
 width: 100%;
-border-bottom-left-radius: 20px;
-border-bottom-right-radius: 20px;
 position: fixed;
 top: 0;
 z-index: 10;
@@ -21,11 +20,11 @@ z-index: 10;
    float: left;
   font-family: 'Sofia';
   font-size: 25px;
-  color: white;
+  color: #eeeeee;
   padding-left: 15px;
  }
  a.linkgeneros{
-   color: white;
+   color: #eeeeee;
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
@@ -34,6 +33,7 @@ z-index: 10;
  }
  a.linkgeneros:hover{
    text-decoration: underline;
+     color: #c10000;
  }
 
  form.buscador{
@@ -50,7 +50,7 @@ z-index: 10;
 form.buscador input.buscar{
   border-style: solid;
   border-width: medium;
-  border-color: white;
+  border-color: #ff4949;
   border-radius: 20px;
   height: 30px;
   width: 170px;
@@ -65,13 +65,14 @@ text-align: center;
 }
 form.buscador input.buscar:hover{
   border-style:solid;
-  border-color: grey;
+  border-color: #c10000;
   border-width: medium;
+
 }
 div a.login{
   font-family: 'ABeeZee';
   font-size: 20px;
-  color: white;
+  color: #eeeeee;
   padding-top: 27px;
   text-decoration: none;
   float: left;
@@ -79,18 +80,18 @@ div a.login{
 }
 div a.login:hover{
   text-decoration: underline;
+  color: #c10000;
 }
 
 footer{
   width: 100%;
   overflow:hidden;
   height: 15vh;
-  background-color: white ;
-  border-radius: 20px;
-  border-top-color: #01d277;
-  border-bottom-color: white;
-  border-left-color: #01d277;
-  border-right-color: #01d277;
+  background-color: #dedede;
+  border-top-color: #ff4949;
+  border-bottom-color: #dedede;
+  border-left-color: #dedede;
+  border-right-color: #dedede;
   border-style: solid;
   border-width: medium;
   margin-top: 20px;
@@ -101,6 +102,7 @@ footer p{
   float: left;
   padding-top: 15px;
   padding-left: 20px;
+  color: #c10000;
 }
 footer img{
   width: 75px;
@@ -114,8 +116,8 @@ ul{
 }
 h1{
   font-family: 'ABeeZee';
-  color: grey;
-  background-image: url("fondo.jpg");
+  color: #ff4949;
+  background-color: #dedede;
   text-align: center;
   height: 100px;
   padding-top: 30px;
@@ -134,9 +136,7 @@ li{
 }
 li img{
   width: 350px;
-  border-style: solid;
-  border-color: #01d277;
-  border-width: medium;
+
 }
 li img:hover{
   opacity: 0.5;

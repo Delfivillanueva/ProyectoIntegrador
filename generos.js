@@ -18,7 +18,7 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
       genero = arrayDeGeneros[i].name;
       id= arrayDeGeneros[i].id;
       li = "<li>"
-      li += '<a href=' + genreURL + id + '><p>'+ genero + "</p></a>"
+      li += '<a href=PeliculasPorgen.html?id=' + id + '&nombre=' + genero + '><p>'+ genero + "</p></a>"
       li += "</li>"
       ul.innerHTML+=li
     }

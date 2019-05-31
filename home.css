@@ -4,11 +4,12 @@ body {
   border: 0;
   padding: 0;
   width: 100%;
-  background-color: #e8e8e8;
+  background-color:#dedede  ;
+
 }
 
 header{
-background-color: #dedede;
+background-color: #393e46;
 overflow: hidden;
 width: 100%;
 position: fixed;
@@ -87,7 +88,7 @@ footer{
   width: 100%;
   overflow:hidden;
   height: 15vh;
-  background-color: #dedede;
+  background-color: #393e46;
   margin-top: 20px;
   z-index: 10;
 }

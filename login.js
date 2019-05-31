@@ -1,12 +1,15 @@
 window.onload = function () {
 
-// como hago para q el usuario quede logueado
+iniciarSesion.onclick = function (a) {
+  a.preventDefault;
+  var valor = document.querySelector("input.usuario").value
+  if (...) {
+    localStorage.setItem("usuario" + valor)
+  }
+}
 
-
-
-// si el usuario ya hizo log in cambiar ingresar x su nombre
-// y agregar el boton de peliculas favoritas
-if (el usuario ya hizo log in) {
+var usu = localStorage.getItem("usuario")
+if (usu !=null) {
   var ingresar = document.querySelector("a.login")
   var usuario = document.querySelector("")
   var pelisFavs = document.querySelector ("")

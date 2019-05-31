@@ -20,6 +20,10 @@ window.onload = function () {
       localStorage.setItem("usuario" , valor)
 
     }
+    else {
+      a.preventDefault()
+      alert("completa todos los datos")
+    }
 
   }
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>peliculas por genero</title>
+    <link rel="stylesheet" href="peliculasporgen.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  </head>
+  <body>
+    <h1></h1>
+    <ul>
+
+    </ul>
+  </body>
+</html>
+<script type="text/javascript" src="peliculasporgen.js"></script>

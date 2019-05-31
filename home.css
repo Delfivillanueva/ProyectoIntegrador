@@ -4,11 +4,11 @@ body {
   border: 0;
   padding: 0;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #e8e8e8;
 }
 
 header{
-background-color: #ff4949;
+background-color: #dedede;
 overflow: hidden;
 width: 100%;
 position: fixed;
@@ -20,11 +20,11 @@ z-index: 10;
    float: left;
   font-family: 'Sofia';
   font-size: 25px;
-  color: #eeeeee;
+  color: #ff4949;
   padding-left: 15px;
  }
  a.linkgeneros{
-   color: #eeeeee;
+   color: #ff4949;
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
@@ -72,7 +72,7 @@ form.buscador input.buscar:hover{
 div a.login{
   font-family: 'ABeeZee';
   font-size: 20px;
-  color: #eeeeee;
+  color: #ff4949;
   padding-top: 27px;
   text-decoration: none;
   float: left;
@@ -88,27 +88,23 @@ footer{
   overflow:hidden;
   height: 15vh;
   background-color: #dedede;
-  border-top-color: #ff4949;
-  border-bottom-color: #dedede;
-  border-left-color: #dedede;
-  border-right-color: #dedede;
-  border-style: solid;
-  border-width: medium;
   margin-top: 20px;
+  z-index: 10;
 }
 footer p{
   font-family: 'ABeeZee';
   font-size: 15px;
   float: left;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 20px;
-  color: #c10000;
+  color: #ff4949;
 }
 footer img{
   width: 75px;
   float: right;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-right: 30px;
+  color: #ff4949;
 }
 ul{
   overflow: hidden;
@@ -117,7 +113,6 @@ ul{
 h1{
   font-family: 'ABeeZee';
   color: #ff4949;
-  background-color: #dedede;
   text-align: center;
   height: 100px;
   padding-top: 30px;

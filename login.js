@@ -1,9 +1,9 @@
 window.onload = function () {
-  //var usuarioLogueado = localStorage.getItem("usuario")
+  var usuarioLogueado = localStorage.getItem("usuario")
 
-  //if (usuarioLogueado != null) {
-    //location.href = "home.html"
-  //}
+  if (usuarioLogueado != null) {
+    location.href = "home.html"
+}
 
 window.localStorage.clear();
   var iniciarSesion = document.querySelector("button.iniciarSesion")

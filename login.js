@@ -6,12 +6,13 @@ window.onload = function () {
 
 // si el usuario ya hizo log in cambiar ingresar x su nombre
 // y agregar el boton de peliculas favoritas
-if (el usuario ya hico log in) {
+if (el usuario ya hizo log in) {
   var ingresar = document.querySelector("a.login")
   var usuario = document.querySelector("")
-  var pelisFavs
+  var pelisFavs = document.querySelector ("")
   ingresar.style.display = block,
   usuario.style.display = none,
+  pelisFavs.style.display = none,
 
 }
 

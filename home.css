@@ -24,6 +24,14 @@ z-index: 10;
   color: #ff4949;
   padding-left: 15px;
  }
+ a.pelisPrefes{
+   display: none;
+   text-decoration: none;
+   color: #c10000
+ }
+ p.nameUsuario{
+   display: none;
+ }
  a.linkgeneros{
    color: #ff4949;
   text-decoration: none;

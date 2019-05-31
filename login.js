@@ -1,29 +1,39 @@
 window.onload = function () {
-  //var usuarioLogueado = localStorage.getItem("usuario")
+  var usuarioLogueado = localStorage.getItem("usuario")
 
-  //if (usuarioLogueado != null) {
-    //location.href = "home.html"
-  //}
+  if (usuarioLogueado != null) {
+    location.href = "home.html"
+}
 
+window.localStorage.clear();
+  var iniciarSesion = document.querySelector("button.iniciarSesion")
+  iniciarSesion.onclick = function (event) {
 
-  //console.log(localStorage);
-  var iniciarSesion = document.querySelector("a.iniciarSesion")
-  iniciarSesion.onclick = function (a) {
-    a.preventDefault();
-    var valor = document.querySelector("input.usuario").value
-    var usuario = document.querySelector("input.usuario")
-    var mail = document.querySelector("input.mail")
-    var genero = document.querySelector("input.genero")
+    var usuario = document.querySelector("input.usuario").value
+    var mail = document.querySelector("input.mail").value
+    var genero = document.querySelector("select.genero").value
 
+    console.log(usuario);
+    console.log(mail);
+    console.log(genero);
+    if (usuario.length>0 && mail.length>0 && genero.length>0) {
+      console.log("entro al if");
+      window.localStorage.removeItem("usuario")
 
-    if (usuario!= null, mail!= null, genero!= null) {
-      localStorage.setItem("usuario" , valor)
+      window.localStorage.setItem("usuario" , usuario)
+      window.localStorage.setItem("mail" , mail)
+      window.localStorage.setItem("genero" , genero)
 
+      console.log(window.localStorage.getItem('genero'));
+      console.log(window.localStorage);
     }
     else {
-      a.preventDefault()
+      event.preventDefault();
       alert("completa todos los datos")
+      console.log(window.localStorage);
     }
 
   }
+
+
 }

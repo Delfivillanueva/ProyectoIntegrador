@@ -6,13 +6,10 @@ window.onload = function () {
       var ingresar = document.querySelector("a.login")
       var usuario = document.querySelector("p.nameUsuario")
       var pelisFavs = document.querySelector ("a.pelisPrefes")
-      //console.log(ingresar);
-      //console.log(usuario);
-      //console.log(pelisFavs);
 
-    //  ingresar.style.display = block;
-    //  usuario.style.display = block;
-    //  pelisFavs.style.display = block;
+      ingresar.style.display = "none";
+      usuario.style.display = "block";
+      pelisFavs.style.display = "block";
     }
 
 

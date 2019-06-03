@@ -4,12 +4,14 @@ window.onload = function () {
     if (usuario.length>0) {
       console.log("entramos al if");
       var ingresar = document.querySelector("a.login")
-      var usuario = document.querySelector("p.nameUsuario")
+      var usuarioHeader = document.querySelector("p.nameUsuario")
       var pelisFavs = document.querySelector ("a.pelisPrefes")
 
       ingresar.style.display = "none";
-      usuario.style.display = "block";
+      usuarioHeader.style.display = "block";
       pelisFavs.style.display = "block";
+
+      usuarioHeader.innerHTML += "<p>" + usuario + "</p>"
     }
 
 

@@ -17,16 +17,23 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
     h1.innerHTML+=nombre;
     var ul = document.querySelector("body ul");
     var li = "";
+    var a = "";
+    var title = "";
+    var poster = "";
+    var id = "";
+    var urlImagen = "https://image.tmdb.org/t/p/original"
     var arrayDePeliculas= data.results
     var array=0;
     for (var i = 0; i < arrayDePeliculas.length; i++) {
       title = arrayDePeliculas[i].title;
       id= arrayDePeliculas[i].id;
       poster= arrayDePeliculas[i].poster_path
-      li = "<li>"
-      li += "<p><a href='detallePeliculas.html?id="+ id + "'>" + title + "</a></p>" + "img src='https://image.tmdb.org/t/p/w500" + poster +"'>"
-      li += "</li>"
-      ul.innerHTML+=li
+
+      a = "<a href='detallePelis.html?id="+ id + "'>"
+        a += "<img src='" + urlImagen + poster + "'>"
+        a += "<p>" + title + "</p>"
+      a += "</a>"
+      ul.innerHTML+= "<li>" + a + "</li>"
     }
   })
 

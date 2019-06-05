@@ -1,5 +1,5 @@
-window.onload = function () {
-
+// window.onload = function () {
+window.addEventListener("load",function(){
 // IDEA: pelis populares
   var url = "https://api.themoviedb.org/3/movie/popular?api_key=5d02a3447f4e9a0a8eaf7b743846e766&language=en-US&page=1"
   fetch(url)
@@ -154,4 +154,4 @@ window.onload = function () {
 
 
 
-}
+})

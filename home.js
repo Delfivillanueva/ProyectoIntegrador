@@ -32,7 +32,7 @@ window.addEventListener("load",function(){
            a += "<p>" + title + "</p>"
          a += "</a>"
 
-         ul.innerHTML += "<li>" + a + "</li>"
+         ul.innerHTML += "<li class='mySlides1'>" + a + "</li>"
 
          //console.log(peli.title);
          //console.log(peli.poster_path);
@@ -77,7 +77,7 @@ window.addEventListener("load",function(){
              a += "<p>" + title + "</p>"
            a += "</a>"
 
-           ul.innerHTML += "<li>" + a + "</li>"
+           ul.innerHTML += "<li class='mySlides2'>" + a + "</li>"
 
            //console.log(peli.title);
            //console.log(peli.poster_path);
@@ -123,7 +123,7 @@ window.addEventListener("load",function(){
            a += "<p>" + title + "</p>"
          a += "</a>"
 
-         ul.innerHTML += "<li>" + a + "</li>"
+         ul.innerHTML += "<li class='mySlides3'>" + a + "</li>"
 
          //console.log(peli.title);
          //console.log(peli.poster_path);

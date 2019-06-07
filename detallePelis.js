@@ -2,8 +2,22 @@ window.addEventListener("load",function(){
 
 // IDEA: DETALLE PELICULA
 
-  var urlParams = new URLSearchParams(window.location.search);
-  var query = urlParams.get('id');
+var urlParams = new URLSearchParams(window.location.search);
+var query = urlParams.get('id');
+
+var url = "https://api.themoviedb.org/3/movie/" + query + "/videos?api_key=5d02a3447f4e9a0a8eaf7b743846e766&language=en-US"
+var urlTrailer = ""
+
+fetch(url)
+  .then(function(response) {
+    return response.json()
+  })
+  .then(function(peli) {
+    var trailer = peli.results[0].key
+
+    urlTrailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+  })
+
 
 var url = "https://api.themoviedb.org/3/movie/"+ query +"?api_key=5d02a3447f4e9a0a8eaf7b743846e766&language=en-US"
 
@@ -32,15 +46,11 @@ fetch(url)
         var arrayDeGeneros = peli.genres
         console.log(arrayDeGeneros);
 
-        for (var i = 0; i < arrayDeGeneros.length; i++) {
-          var gen = arrayDeGeneros[i]
-          nombreGeneros = gen.genres
-          idGeneros = gen.genres
-        }
+
 
           title = peli.title
-          nombreGeneros = gen.name
-          idGeneros = gen.id
+
+
           idioma = peli.original_language
           sinapsis = peli.overview
           estreno = peli.release_date
@@ -51,14 +61,24 @@ fetch(url)
          li = "<li>"
          li += "<p class='movieTitle'>" + title + "</p>"
          li += "<img src='" + urlImagen + poster + "'>"
-         li += "<p class='movieData'>" + "<b>Generos:</b> " + nombreGeneros + "</p>"
+         li += "<p class='movieData'>" + "<b>Generos:</b> "
+         for (var i = 0; i < arrayDeGeneros.length; i++) {
+           var gen = arrayDeGeneros[i]
+           nombreGeneros = gen.name
+           idGeneros = gen.id
+           li += nombreGeneros
+         }
+
+         li += "</p>"
          // IDEA: me aparece un solo genero
          li += "<p class='movieData'>" + "<b>Idioma original:</b> " + idioma + "</p>"
          li += "<p class='movieData'>" + "<b>Sinapsis:</b> " + sinapsis + "</p>"
          li += "<p class='movieData'>" + "<b>Fecha de estreno:</b> " + estreno + "</p>"
          // IDEA: falta el trailer
+         li += urlTrailer
          li += "</li>"
          ul.innerHTML += li
+
 
          // IDEA: si es undefined deberia desaparecer "undefined"
 

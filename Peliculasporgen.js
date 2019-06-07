@@ -35,8 +35,9 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
       a += "</a>"
       ul.innerHTML+= "<li class='mySlides1'>" + a + "</li>"
     }
+    showSlides(1, 0);
   })
-showSlides(1, 0);
+
 
 
   .catch(function(error){

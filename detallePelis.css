@@ -28,5 +28,10 @@ li p.movieTitle{
 }
 li img{
   width: 350px;
-  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
+}
+li p.movieData{
+  padding-left: 20px;
+  font-family: 'ABeeZee';
 }

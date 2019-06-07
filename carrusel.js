@@ -1,4 +1,4 @@
-window.addEventListener("load",function(){
+
 function plusSlides(n, no) {
   if (no===2) {
     console.log("proxpeliculas");
@@ -31,4 +31,3 @@ function plusSlides(n, no) {
     x[slideIndex[no]-1].style.display = "block";
     // IDEA: del el elementoque estoy muestro el que aprete el boton, es -1 porque es un array y es el primero.
   }
-})

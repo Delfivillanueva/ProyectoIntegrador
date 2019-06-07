@@ -72,6 +72,14 @@ fetch(url)
 
   // IDEA: RECOMENDACIONES
 
+
+  var boton = document.querySelector("button.recomendaciones")
+  boton.addEventListener("click",function(){
+    document.querySelector("ul.recomendaciones").style.display = "block";
+
+  })
+  
+
   var QueryString = new URLSearchParams(location.search)
   var id= QueryString.get("id")
 

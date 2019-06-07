@@ -1,0 +1,32 @@
+*{box-sizing: border-box;}
+/* IDEA: CSS DEL BODY */
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  background-color:#dedede  ;
+}
+
+ul{
+  overflow: hidden;
+  padding-left: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+li p.movieTitle{
+  font-family: 'ABeeZee';
+  color: #ff4949;
+  text-align: center;
+  height: 100px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin-left:0;
+}
+li img{
+  width: 350px;
+  margin-right: 20px;
+}

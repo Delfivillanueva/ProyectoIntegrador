@@ -49,7 +49,7 @@ fetch(url)
           id = peli.id
 
          li = "<li>"
-         li += "<p>" + title + "</p>"
+         li += "<p class='movieTitle'>" + title + "</p>"
          li += "<img src='" + urlImagen + poster + "'>"
          li += "<p>" + "Generos: " + nombreGeneros + "</p>"
          // IDEA: me aparece un solo genero

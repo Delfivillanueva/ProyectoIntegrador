@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  background-color:#dedede  ;
+
+}
+h1{
+  font-family: 'ABeeZee';
+  color: #ff4949;
+  text-align: center;
+  height: 100px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin-left:0;
+}
+li{
+    float: left;
+    list-style-type: none;
+    margin-right:4%;
+    margin-bottom: 2.5%;
+    padding-left: 35px;
+  }
+  li img{
+    width: 350px;
+
+  }
+  li img:hover{
+    opacity: 0.5;
+    border-color: grey;
+  }

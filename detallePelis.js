@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load",function(){
 
 // IDEA: DETALLE PELICULA
 
@@ -78,7 +78,7 @@ fetch(url)
     document.querySelector("ul.recomendaciones").style.display = "block";
 
   })
-  
+
 
   var QueryString = new URLSearchParams(location.search)
   var id= QueryString.get("id")
@@ -111,15 +111,15 @@ fetch(url)
 
          a = "<a href='detallePelis.html?id="+ id + "'>"
            a += "<img src='" + urlImagen + poster + "'>"
-           a += "<p>" + title + "</p>"
+           a += "<p class='movieTitle'>" + title + "</p>"
          a += "</a>"
 
-         ul.innerHTML += "<li>" + a + "</li>"
+         ul.innerHTML += "<li class='mySlides1'>" + a + "</li>"
 
          // console.log(peli.title);
          // console.log(peli.poster_path);
        }
-
+        showSlides(1, 0);
     })
     .catch(function(error){
       console.log("Error"+ error);
@@ -134,4 +134,4 @@ fetch(url)
 
 
 
-}
+})

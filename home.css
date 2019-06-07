@@ -28,27 +28,28 @@ z-index: 10;
    text-decoration: none;
    color: #c10000
  }
- p.nameUsuario{
-   display: none;
- }
+
  a.linkgeneros , a.pelisPrefes{
-   color: #ff4949;
+  color: #ff4949;
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
-  padding-top: 27px;
+  padding-top: 7%;
   float: left;
  }
  a.pelisPrefes{
    margin-right: 15px;
+   padding-top: 7%;
  }
  p.nameUsuario{
-   color: #ff4949;
+  display: none;
+  color: #ff4949;
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
-  padding-top: 27px;
+  /* padding-top: 27px; */
   float: left;
+  padding-right: 5%;
    }
  a.linkgeneros:hover{
    text-decoration: underline;
@@ -60,13 +61,13 @@ a.pelisPrefes:hover{
 }
 
  form.buscador{
-  padding-top: 25px;
+  padding-top: 6%;
   float: right;
   padding-right: 20px;
  }
  div.derecha{
    float: right;
-   width: 50%;
+   width: 40%;
    overflow: hidden;
  }
 form.buscador input.buscar{

@@ -51,11 +51,11 @@ fetch(url)
          li = "<li>"
          li += "<p class='movieTitle'>" + title + "</p>"
          li += "<img src='" + urlImagen + poster + "'>"
-         li += "<p>" + "Generos: " + nombreGeneros + "</p>"
+         li += "<p class='movieData'>" + "<b>Generos:</b> " + nombreGeneros + "</p>"
          // IDEA: me aparece un solo genero
-         li += "<p>" + "Idioma original: " + idioma + "</p>"
-         li += "<p>" + "Sinapsis: " + sinapsis + "</p>"
-         li += "<p>" + "Fecha de estreno: " + estreno + "</p>"
+         li += "<p class='movieData'>" + "<b>Idioma original:</b> " + idioma + "</p>"
+         li += "<p class='movieData'>" + "<b>Sinapsis:</b> " + sinapsis + "</p>"
+         li += "<p class='movieData'>" + "<b>Fecha de estreno:</b> " + estreno + "</p>"
          // IDEA: falta el trailer
          li += "</li>"
          ul.innerHTML += li

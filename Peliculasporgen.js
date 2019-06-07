@@ -31,7 +31,7 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
 
       a = "<a href='detallePelis.html?id="+ id + "'>"
         a += "<img src='" + urlImagen + poster + "'>"
-        a += "<p>" + title + "</p>"
+        a += "<p class='movieTitle'>" + title + "</p>"
       a += "</a>"
       ul.innerHTML+= "<li class='mySlides1'>" + a + "</li>"
     }

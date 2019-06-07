@@ -35,3 +35,6 @@ li p.movieData{
   padding-left: 20px;
   font-family: 'ABeeZee';
 }
+ul.recomendaciones{
+  display: none;
+}

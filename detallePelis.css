@@ -150,3 +150,9 @@ li.mySlides1 {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+.recomendaciones {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}

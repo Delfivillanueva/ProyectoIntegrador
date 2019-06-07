@@ -84,7 +84,7 @@ fetch(url)
        // console.log(data);
        console.log(data.results);
 
-       var ul = document.querySelector("ul");
+       var ul = document.querySelector("ul.recomendaciones");
        var li = "";
        var p =  "";
        var a = "";

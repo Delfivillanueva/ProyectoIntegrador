@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
 
          a = "<a href='detallePelis.html?id="+ id + "'>"
            a += "<img src='" + urlImagen + poster + "'>"
-           a += "<p>" + title + "</p>"
+           a += "<p class='movieTitle'>" + title + "</p>"
          a += "</a>"
 
          ul.innerHTML += "<li class='mySlides1'>" + a + "</li>"
@@ -75,7 +75,7 @@ window.addEventListener("load",function(){
 
            a = "<a href='detallePelis.html?id="+ id + "'>"
              a += "<img src='" + urlImagen + poster + "'>"
-             a += "<p>" + title + "</p>"
+             a += "<p class='movieTitle'>" + title + "</p>"
            a += "</a>"
 
            ul.innerHTML += "<li class='mySlides2'>" + a + "</li>"
@@ -122,7 +122,7 @@ window.addEventListener("load",function(){
 
          a = "<a href='detallePelis.html?id="+ id + "'>"
            a += "<img src='" + urlImagen + poster + "'>"
-           a += "<p>" + title + "</p>"
+           a += "<p class='movieTitle'>" + title + "</p>"
          a += "</a>"
 
          ul.innerHTML += "<li class='mySlides3'>" + a + "</li>"

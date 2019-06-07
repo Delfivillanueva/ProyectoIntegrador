@@ -1,4 +1,4 @@
-window.onload=function(){
+window.addEventListener("load",function(){
   var urlParams = new URLSearchParams(window.location.search);
   var texto = urlParams.get('buscar');
 console.log(texto);
@@ -21,12 +21,28 @@ return response.json()
     var urlImagen = "https://image.tmdb.org/t/p/original";
 
     for (var i = 0; i < arrayDePelis.length; i++) {
+      if (poster="") {
+        peli = arrayDePelis[i]
+        title = peli.title
+        console.log(peli);
+        id = peli.id
+         ul.innerHTML += "<li class='mySlides1'><p class='movieTitle'>"+ title + "</p></li>";
+      }
+    else {
       peli = arrayDePelis[i]
       title = peli.title
+      console.log(peli);
       poster = peli.poster_path
       id = peli.id
-       ul.innerHTML += "<li><p>"+ title + "</p><img scr='"+ urlImagen + poster + "'></li>";
+
+      a = "<a href='detallePelis.html?id="+ id + "'>"
+        a += "<img src='" + urlImagen + poster + "'>"
+        a += "<p class='movieTitle'>" + title + "</p>"
+      a += "</a>"
+       ul.innerHTML += "<li class='mySlides1'>"+a+"</li>";
     }
+    }
+      showSlides(1, 0);
 })
 .catch(function(error) {
 console.log("Error: " + error);
@@ -64,4 +80,4 @@ console.log("Error: " + error);
 
 
 
-}
+})

@@ -37,7 +37,8 @@ window.addEventListener("load",function(){
          //console.log(peli.title);
          //console.log(peli.poster_path);
        }
-
+       // IDEA: cree el array que va a ayudarme a elegir cada una de los tres carruselles que voy a crear
+        showSlides(1, 0);
     })
     .catch(function(error){
       console.log("Error"+ error);
@@ -82,7 +83,8 @@ window.addEventListener("load",function(){
            //console.log(peli.title);
            //console.log(peli.poster_path);
          }
-
+         // IDEA: cree el array que va a ayudarme a elegir cada una de los tres carruselles que voy a crear. Esta info agarra lo que el fech puso en la pag y lo oculta. Me aseguroque existan despues del fech porque la respuesta es asincronica
+          showSlides(1, 1);
       })
       .catch(function(error){
         console.log("Error"+ error);
@@ -128,7 +130,8 @@ window.addEventListener("load",function(){
          //console.log(peli.title);
          //console.log(peli.poster_path);
        }
-
+       // IDEA: cree el array que va a ayudarme a elegir cada una de los tres carruselles que voy a crear
+        showSlides(1, 2);
     })
     .catch(function(error){
       console.log("Error"+ error);

@@ -1,4 +1,4 @@
-window.onload=function(){
+window.addEventListener("load",function(){
 
 var QueryString = new URLSearchParams(location.search)
 var nombre= QueryString.get("nombre")
@@ -33,10 +33,10 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
         a += "<img src='" + urlImagen + poster + "'>"
         a += "<p>" + title + "</p>"
       a += "</a>"
-      ul.innerHTML+= "<li>" + a + "</li>"
+      ul.innerHTML+= "<li class='mySlides1'>" + a + "</li>"
     }
   })
-
+showSlides(1, 0);
 
 
   .catch(function(error){
@@ -70,4 +70,4 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
 
 
 
-}
+})

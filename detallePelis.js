@@ -37,7 +37,7 @@ fetch(url)
         var title = "";
         var generos = "";
         var idioma = "";
-        var sinapsis = "";
+        var sinopsis = "";
         var estreno = "";
         var poster = "";
         var trailer = "";
@@ -49,13 +49,10 @@ fetch(url)
 
 
           title = peli.title
-
-
           idioma = peli.original_language
-          sinapsis = peli.overview
+          sinopsis = peli.overview
           estreno = peli.release_date
           poster = peli.poster_path
-          trailer = peli.video
           id = peli.id
 
          li = "<li>"
@@ -64,23 +61,20 @@ fetch(url)
          li += "<p class='movieData'>" + "<b>Generos:</b> "
          for (var i = 0; i < arrayDeGeneros.length; i++) {
            var gen = arrayDeGeneros[i]
-           nombreGeneros = gen.name
-           idGeneros = gen.id
+           var nombreGeneros = gen.name
+           var idGeneros = gen.id
            li += nombreGeneros
          }
 
          li += "</p>"
-         // IDEA: me aparece un solo genero
          li += "<p class='movieData'>" + "<b>Idioma original:</b> " + idioma + "</p>"
-         li += "<p class='movieData'>" + "<b>Sinapsis:</b> " + sinapsis + "</p>"
+         li += "<p class='movieData'>" + "<b>Sinapsis:</b> " + sinopsis + "</p>"
          li += "<p class='movieData'>" + "<b>Fecha de estreno:</b> " + estreno + "</p>"
-         // IDEA: falta el trailer
          li += urlTrailer
          li += "</li>"
          ul.innerHTML += li
 
 
-         // IDEA: si es undefined deberia desaparecer "undefined"
 
 
 

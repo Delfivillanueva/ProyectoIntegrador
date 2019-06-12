@@ -139,8 +139,17 @@ fetch(url)
       console.log("Error"+ error);
     })
 
+// cuando apreta el a de corazon vacio, si ya hizo log in, lo tiene que
+// mandar a la pagina de pelisprefes, y sino a la pagina de log in o home (?).
+//
+// ademas, si ya esta loggueado, debe almacenar esa pelicula en la pagina de
+// pelisfavs y deberia llenarse el corazonLleno
+//
+// si no tiene peliculas favoritas y entra a pelis favs deberia aparecer
+// un cartel
 
 
+  
 
 
 

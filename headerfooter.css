@@ -126,3 +126,12 @@ footer img{
   padding-right: 30px;
   color: #ff4949;
 }
+@media only screen and (max-width: 600px){
+  footer{
+    position: absolute;
+    bottom: 0px;  QUIERO QUE ESTE ABAJO DE TODO
+  }
+  div.derecha{
+   width: 70%;
+  }
+}

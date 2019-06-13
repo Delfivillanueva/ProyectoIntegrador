@@ -12,14 +12,19 @@
   <header>
       <a href="home.html"><p class="logo">Apriori Movie</p></a>
       <div class="derecha">
-        <a href="login.html" class="login">Ingresar</a>
-        <p class="nameUsuario"> </p>
-        <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
-        <a href="generos.html" class="linkgeneros">Géneros</a>
-        <form action="buscador.html" method="GET" class="buscador">
-           <input type="text" name="buscar" class="buscar" placeholder="Buscar">
-        </form>
+        <div id="myLinks">
+          <a href="login.html" class="login">Ingresar</a>
+          <p class="nameUsuario"> </p>
+          <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
+          <a href="generos.html" class="linkgeneros">Géneros</a>
+        </div>
+        <a class="icon" onclick="menuFunction();">
+          <i class="">Menu</i>
+        </a>
       </div>
+      <form action="buscador.html" method="GET" class="buscador">
+         <input type="text" name="buscar" class="buscar" placeholder="Buscar">
+      </form>
    </header>
      <ul class="genbro">
        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>

@@ -8,6 +8,9 @@ top: 0;
 z-index: 10;
 
 }
+a.icon{
+  display: none;
+}
  p.logo{
    float: left;
   font-family: 'Sofia';
@@ -108,6 +111,8 @@ footer{
   background-color: #393e46;
   margin-top: 20px;
   z-index: 10;
+  position: relative;
+  bottom: 0;
 }
 
 footer p{
@@ -127,11 +132,45 @@ footer img{
   color: #ff4949;
 }
 @media only screen and (max-width: 600px){
-  footer{
-    position: absolute;
-    bottom: 0px;  QUIERO QUE ESTE ABAJO DE TODO
-  }
-  div.derecha{
-   width: 70%;
-  }
+    /* Style the navigation menu */
+    .derecha {
+      overflow: hidden;
+      /* background-color: #333; */
+      position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .derecha #myLinks {
+      display: none;
+    }
+
+    /* Style navigation menu links */
+    .derecha a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    /* Style the hamburger menu */
+    .derecha a.icon {
+      /* background: black; */
+      display: block;
+      /* position: absolute; */
+      /* right: 0;
+      top: 0;*/
+    }
+
+    /* Add a grey background color on mouse-over */
+    .derecha a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+      /* background-color: #4CAF50; */
+      /* color: white; */
+    }
 }

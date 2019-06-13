@@ -1,5 +1,8 @@
 // window.onload = function () {
 window.addEventListener("load",function(){
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// IDEA: HEADER DE BARRITAS PARA MEDIA MOBILE
+
 // IDEA: pelis populares
   var url = "https://api.themoviedb.org/3/movie/popular?api_key=5d02a3447f4e9a0a8eaf7b743846e766&language=en-US&page=1"
   fetch(url)
@@ -140,3 +143,14 @@ window.addEventListener("load",function(){
 
 
 })
+function menuFunction() {
+  var b = document.querySelector("form.buscador");
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    // b.style.display = "block";
+  } else {
+    x.style.display = "block";
+    // b.style.display = "none";
+  }
+}

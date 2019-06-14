@@ -56,7 +56,7 @@ fetch(url)
           id = peli.id
 
          li = "<li>"
-         li += "<p class='movieTitle'>" + title + "</p>"
+        li += "<p class='movieTitle'>" + title + "</p>"
          li += "<img src='" + urlImagen + poster + "'>"
          li += "<p class='movieData'>" + "<b>Generos:</b> "
          for (var i = 0; i < arrayDeGeneros.length; i++) {

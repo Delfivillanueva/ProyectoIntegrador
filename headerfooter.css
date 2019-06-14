@@ -64,11 +64,13 @@ a.pelisPrefes:hover{
 ul.menuGrande{
   margin: 0;
   overflow: hidden;
+  padding-left: 0px;
 }
 ul.menuGrande li{
   /* width: 33.33%; */
   float: left;
   margin: 0 30px 0 0;
+  padding-left: 0px;
 }
   form.buscador{
   /* padding-top: 6%; */

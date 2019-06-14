@@ -13,9 +13,9 @@ var genreURL = "https://api.themoviedb.org/3/discover/movie?api_key=5d02a3447f4e
 
   .then (function (data) {
     console.log(data);
-    var h1= document.querySelector("body h1");
+    var h1= document.querySelector("div.pelisporgenero h1");
     h1.innerHTML+=nombre;
-    var ul = document.querySelector("body ul");
+    var ul = document.querySelector("div.pelisporgenero ul");
     var li = "";
     var a = "";
     var title = "";

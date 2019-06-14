@@ -29,7 +29,7 @@ fetch(url)
        console.log(peli);
        //console.log(data.results);
 
-        var ul = document.querySelector("ul");
+        var ul = document.querySelector("div.detallemovies ul");
         var li = "";
         var p =  "";
         var a = "";

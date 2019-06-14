@@ -7,12 +7,13 @@ window.addEventListener("load",function(){
       var usuarioHeader = document.querySelector("p.nameUsuario")
       var usuarioMobile = document.querySelector("p.nameUsuarioMobile")
       var pelisFavs = document.querySelector ("a.pelisPrefes")
-      var pelisFavs = document.querySelector ("a.pelisPrefesMobile")
+      var pelisFavsMobile = document.querySelector ("a.pelisPrefesMobile")
       ingresarGrande.style.display = "none";
       ingresarMobile.style.display = "none";
       usuarioHeader.style.display = "block";
       usuarioMobile.style.display = "block";
       pelisFavs.style.display = "block";
+      pelisFavsMobile.style.display = "block";
 
       usuarioHeader.innerHTML +=  usuario
       usuarioMobile.innerHTML += usuario

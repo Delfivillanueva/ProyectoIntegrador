@@ -11,20 +11,26 @@
   <body>
     <header>
         <a href="home.html"><p class="logo">Apriori Movie</p></a>
-        <div class="derecha">
-          <div id="myLinks">
-            <a href="login.html" class="login">Ingresar</a>
-            <p class="nameUsuario"> </p>
-            <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
-            <a href="generos.html" class="linkgeneros">Géneros</a>
-          </div>
-          <a class="icon" onclick="menuFunction();">
-            <i class="">Menu</i>
-          </a>
+        <div class="datosyBuscador">
+          <form action="buscador.html" method="GET" class="buscador">
+             <input type="text" name="buscar" class="buscar" placeholder="Buscar">
+          </form>
+           <div class="derecha">
+              <ul class="menuGrande">
+                     <li><a href="login.html" class="login">Ingresar</a></li>
+                     <li><p class="nameUsuario"> </p></li>
+                     <li><a href="pelisprefes.html" class="pelisPrefes">Peliculas favoritas</a></li>
+                     <li><a href="generos.html" class="linkgeneros">Géneros</a></li>
+              </ul>
+              <div id="myLinks">
+                      <a href="login.html" class="login">Ingresar</a>
+                      <p class="nameUsuarioMobile"> </p>
+                      <a href="pelisPrefes.html" class="pelisPrefesMobile">Peliculas favoritas</a>
+                      <a href="generos.html" class="linkgeneros">Géneros</a>
+              </div>
+              <a class="iconmenu" onclick="menuFunction();">Menu</a>
+            </div>
         </div>
-        <form action="buscador.html" method="GET" class="buscador">
-           <input type="text" name="buscar" class="buscar" placeholder="Buscar">
-        </form>
      </header>
 <main>
   <h1>Géneros</h1>

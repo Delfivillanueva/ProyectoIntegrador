@@ -7,6 +7,10 @@ body {
   background-color:#dedede  ;
 
 }
+ul{
+  /* overflow: hidden; */
+  padding-left: 0;
+}
 h1{
   font-family: 'ABeeZee';
   color: #ff4949;
@@ -15,14 +19,14 @@ h1{
   padding-top: 30px;
   font-size: 40px;
   margin-left:0;
-  margin-top: 10%;
+  margin-top: 100px;
 }
 li{
-    float: left;
+    /* float: left; */
     list-style-type: none;
-    margin-right:4%;
+    /* margin-right:4%;
     margin-bottom: 2.5%;
-    padding-left: 35px;
+    padding-left: 35px; */
   }
   li img{
     width: 350px;
@@ -49,6 +53,7 @@ li{
     max-width: 1000px;
     position: relative;
     margin: auto;
+
   }
 
   /* Hide the images by default */

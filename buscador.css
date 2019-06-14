@@ -7,9 +7,9 @@ body {
   background-color:#dedede ;
 }
 ul{
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-left: 0;
-  padding-top: 170px;
+  padding-top: 170px; 
 }
 
 h1{
@@ -24,11 +24,11 @@ h1{
 
 
 li{
-  float: left;
+  /* float: left; */
   list-style-type: none;
-  margin-right:4%;
+  /* margin-right:4%;
   margin-bottom: 2.5%;
-  padding-left: 35px;
+  padding-left: 35px; */
 }
 
 li img{
@@ -40,11 +40,11 @@ li img:hover{
   border-color: grey;
 }
  p.movieTitle{
-  text-decoration: none;
-  font-family: 'ABeeZee';
-  color: #ff4949;
-  text-align: center;
-  font-size: 20px;
+   text-decoration: none;
+   font-family: 'ABeeZee';
+   color: #ff4949;
+   text-align: center;
+   font-size: 20px;
 }
 li a{
     text-decoration: none;

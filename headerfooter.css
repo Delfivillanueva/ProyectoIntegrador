@@ -131,6 +131,11 @@ footer img{
   padding-right: 30px;
   color: #ff4949;
 }
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.derecha #myLinks {
+  display: none;
+}
 @media only screen and (max-width: 600px){
     /* Style the navigation menu */
     .derecha {
@@ -140,7 +145,7 @@ footer img{
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
-    .derecha #myLinks {
+    .derecha #myLinks, .derecha div.menuGrande {
       display: none;
     }
 
@@ -157,6 +162,9 @@ footer img{
     .derecha a.icon {
       /* background: black; */
       display: block;
+      color: #ff4949;
+      text-decoration: none;
+      font-family: 'ABeeZee';
       /* position: absolute; */
       /* right: 0;
       top: 0;*/

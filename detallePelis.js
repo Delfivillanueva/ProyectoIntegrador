@@ -145,7 +145,13 @@ console.log(botoncorazon);
 botoncorazon.addEventListener("click",function(){
   document.querySelector("img.corazonVacio").style.display = "none";
   document.querySelector("img.corazonLleno").style.display="block";
+})
 
+var botoncorazonlleno = document.querySelector("img.corazonLleno")
+console.log(botoncorazonlleno);
+botoncorazonlleno.addEventListener("click",function(){
+  document.querySelector("img.corazonLleno").style.display = "none";
+  document.querySelector("img.corazonVacio").style.display="block";
 })
 
 

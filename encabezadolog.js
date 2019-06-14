@@ -14,8 +14,8 @@ window.addEventListener("load",function(){
       usuarioMobile.style.display = "block";
       pelisFavs.style.display = "block";
 
-      usuarioHeader.innerHTML += "<p>" + usuario + "</p>"
-      usuarioMobile.innerHTML += "<p>" + usuario + "</p>"
+      usuarioHeader.innerHTML +=  usuario
+      usuarioMobile.innerHTML += usuario
     }
 
 })

@@ -64,6 +64,17 @@ a p.movieTitle{
 li a{
     text-decoration: none;
 }
+/* IDEA: CSS DE LOS CORAZONES PARA PELIS PREFES */
+img.corazonLleno , img.corazonVacio{
+width: 50px;
+margin-left: 20px;
+}
+img.corazonVacio:hover{
+  opacity: 0.5;
+}
+img.corazonLleno{
+  display: none;
+}
 /* IDEA: ACA VIENE EL CSS DEL CARRUSEL */
 /* Slideshow container */
 .genbro {

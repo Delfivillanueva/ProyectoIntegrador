@@ -139,6 +139,7 @@ fetch(url)
       console.log("Error"+ error);
     })
 
+// IDEA: JS DE LOS CORAZONES Y DETALLES PELIS
 // cuando apreta el a de corazon vacio, si ya hizo log in, lo tiene que
 // mandar a la pagina de pelisprefes, y sino a la pagina de log in o home (?).
 //
@@ -149,7 +150,7 @@ fetch(url)
 // un cartel
 
 
-  
+
 
 
 

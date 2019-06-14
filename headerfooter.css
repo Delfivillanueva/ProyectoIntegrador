@@ -12,11 +12,16 @@ a.icon{
   display: none;
 }
  p.logo{
-   float: left;
+  float: left;
   font-family: 'Sofia';
   font-size: 25px;
   color: #ff4949;
   padding-left: 15px;
+ }
+
+ div.datosyBuscador{
+   float: right;
+   width: 500px;
  }
  a.pelisPrefes{
    display: none;
@@ -29,12 +34,12 @@ a.icon{
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
-  padding-top: 7%;
-  float: left;
+  /* padding-top: 7%; */
+  /* float: left; */
  }
  a.pelisPrefes{
-   margin-right: 15px;
-   padding-top: 7%;
+   /* margin-right: 15px;
+   padding-top: 7%; */
  }
  p.nameUsuario{
   display: none;
@@ -42,9 +47,10 @@ a.icon{
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 20px;
+  margin: 0;
   /* padding-top: 27px; */
-  float: left;
-  padding-right: 5%;
+  /* float: left;
+  padding-right: 5%; */
    }
  a.linkgeneros:hover{
    text-decoration: underline;
@@ -55,10 +61,10 @@ a.pelisPrefes:hover{
   color: #c10000;
 }
 
- form.buscador{
-  padding-top: 6%;
+  form.buscador{
+  /* padding-top: 6%; */
   float: right;
-  padding-right: 20px;
+  /* padding-right: 20px; */
  }
  div.derecha{
    float: right;
@@ -72,14 +78,14 @@ form.buscador input.buscar{
   border-radius: 20px;
   height: 30px;
   width: 170px;
-  padding-right: 25px;
+  /* padding-right: 25px; */
 }
 input.buscar::placeholder{
 text-align: center;
   font-family: 'ABeeZee';
   font-size: 20px;
   margin: auto;
-  /* IDEA: NO QUEDA EN EL MEDIO BROOOOO */
+
 }
 form.buscador input.buscar:hover{
   border-style:solid;
@@ -91,10 +97,10 @@ div a.login{
   font-family: 'ABeeZee';
   font-size: 20px;
   color: #ff4949;
-  padding-top: 27px;
+  /* padding-top: 27px; */
   text-decoration: none;
   float: left;
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 
 div a.login:hover{

@@ -13,26 +13,27 @@
 <body>
   <header>
       <a href="home.html"><p class="logo">Apriori Movie</p></a>
-      <div class="derecha">
-        <div class="menuGrande">
-          <a href="login.html" class="login">Ingresar</a>
-          <p class="nameUsuario"> </p>
-          <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
-          <a href="generos.html" class="linkgeneros">Géneros</a>
+      <div class="datosyBuscador">
+        <form action="buscador.html" method="GET" class="buscador">
+           <input type="text" name="buscar" class="buscar" placeholder="Buscar">
+        </form>
+         <div class="derecha">
+            <div class="menuGrande">
+                   <a href="login.html" class="login">Ingresar</a>
+                   <p class="nameUsuario"> </p>
+                   <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
+                   <a href="generos.html" class="linkgeneros">Géneros</a>
+            </div>
+          <div id="myLinks">
+                  <a href="login.html" class="login">Ingresar</a>
+                  <p class="nameUsuarioMobile"> </p>
+                  <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
+                  <a href="generos.html" class="linkgeneros">Géneros</a>
+          </div>
+           <a class="icon" onclick="menuFunction();"><i class="">Menu</i></a>
         </div>
-        <div id="myLinks">
-          <a href="login.html" class="login">Ingresar</a>
-          <p class="nameUsuarioMobile"> </p>
-          <a href="pelisPrefes.html" class="pelisPrefes">Peliculas favoritas</a>
-          <a href="generos.html" class="linkgeneros">Géneros</a>
-        </div>
-        <a class="icon" onclick="menuFunction();">
-          <i class="">Menu</i>
-        </a>
-      </div>
-      <form action="buscador.html" method="GET" class="buscador">
-         <input type="text" name="buscar" class="buscar" placeholder="Buscar">
-      </form>
+
+    </div>
    </header>
   <ul class="peliculaspopu" class="peliculas">
     <h1 class="peliculaspopulares">Películas Populares</h1>

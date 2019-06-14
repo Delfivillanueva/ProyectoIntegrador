@@ -20,19 +20,24 @@ return response.json()
     var id = 0
     var urlImagen = "https://image.tmdb.org/t/p/original";
 
+
+
+
     for (var i = 0; i < arrayDePelis.length; i++) {
-      if (poster="") {
-        peli = arrayDePelis[i]
+      peli = arrayDePelis[i]
+      poster = peli.poster_path
+      if (poster==null) {
         title = peli.title
         console.log(peli);
         id = peli.id
          ul.innerHTML += "<li class='mySlides1'><p class='movieTitle'>"+ title + "</p></li>";
       }
     else {
-      peli = arrayDePelis[i]
+      poster = peli.poster_path
+
       title = peli.title
       console.log(peli);
-      poster = peli.poster_path
+
       id = peli.id
 
       a = "<a href='detallePelis.html?id="+ id + "'>"

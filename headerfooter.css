@@ -151,9 +151,16 @@ footer img{
 .derecha #myLinks {
   display: none;
 }
+a.iconmenu{
+  display: none;
+}
+
+
 @media only screen and (max-device-width: 800px){
     a.iconmenu{
      text-align: right;
+     display: block;
+     padding-right: 20px;
     }
     /* Style the navigation menu */
     .derecha {

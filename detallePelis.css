@@ -68,6 +68,7 @@ li a{
 img.corazonLleno , img.corazonVacio{
 width: 50px;
 margin-left: 20px;
+cursor: pointer;
 }
 img.corazonVacio:hover{
   opacity: 0.5;

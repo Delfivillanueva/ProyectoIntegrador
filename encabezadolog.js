@@ -7,7 +7,7 @@ window.addEventListener("load",function(){
       var usuarioHeader = document.querySelector("p.nameUsuario")
       var usuarioMobile = document.querySelector("p.nameUsuarioMobile")
       var pelisFavs = document.querySelector ("a.pelisPrefes")
-
+      var pelisFavs = document.querySelector ("a.pelisPrefesMobile")
       ingresarGrande.style.display = "none";
       ingresarMobile.style.display = "none";
       usuarioHeader.style.display = "block";
@@ -22,6 +22,7 @@ window.addEventListener("load",function(){
 function menuFunction() {
   var b = document.querySelector("form.buscador");
   var x = document.getElementById("myLinks");
+  var pelisFavs = document.querySelector ("a.pelisPrefes")
   if (x.style.display === "block") {
     x.style.display = "none";
     b.style.display = "block";

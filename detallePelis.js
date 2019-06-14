@@ -140,6 +140,15 @@ fetch(url)
     })
 
 // IDEA: JS DE LOS CORAZONES Y DETALLES PELIS
+var botoncorazon = document.querySelector("img.corazonVacio")
+console.log(botoncorazon);
+botoncorazon.addEventListener("click",function(){
+  document.querySelector("img.corazonVacio").style.display = "none";
+  document.querySelector("img.corazonLleno").style.display="block";
+
+})
+
+
 // cuando apreta el a de corazon vacio, si ya hizo log in, lo tiene que
 // mandar a la pagina de pelisprefes, y sino a la pagina de log in o home (?).
 //

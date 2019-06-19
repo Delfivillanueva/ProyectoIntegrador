@@ -155,7 +155,8 @@ if (json != null) {
   // De todo el objeto literal me interesa EL ARRAY
   var favoritos = objLit.carac
 
-} else {
+}
+else {
   // Si no habia creo el listado como VACIO
   var favoritos = []
 }

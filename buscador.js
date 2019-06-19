@@ -1,4 +1,8 @@
 window.addEventListener("load",function(){
+
+// IDEA: tiene q quedar guardado lo que busque
+
+
   var urlParams = new URLSearchParams(window.location.search);
   var texto = urlParams.get('buscar');
 console.log(texto);

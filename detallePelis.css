@@ -29,7 +29,7 @@ li p.movieTitle{
 }
 li img{
   width: 350px;
-  margin-left: 20px;
+  /* margin-left: 35%; */
   float: left;
 }
 li p.movieData{

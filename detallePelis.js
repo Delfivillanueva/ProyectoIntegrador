@@ -29,7 +29,7 @@ fetch(url)
        console.log(peli);
        //console.log(data.results);
 
-        var ul = document.querySelector("div.detallemovies ul");
+        var ul = document.querySelector("ul.detallepelis");
         var li = "";
         var p =  "";
         var a = "";
@@ -56,9 +56,9 @@ fetch(url)
           id = peli.id
 
          li = "<li>"
-        li += "<p class='movieTitle'>" + title + "</p>"
-         li += "<img src='" + urlImagen + poster + "'>"
-         li += "<p class='movieData'>" + "<b>Generos:</b> "
+         li += "<p class='movieTitle'>" + title + "</p>"
+         li += "<p><img src='" + urlImagen + poster + "'></p>"
+         li += "<p class='movieData'>" + "<b>Generos:</b>"
          for (var i = 0; i < arrayDeGeneros.length; i++) {
            var gen = arrayDeGeneros[i]
            var nombreGeneros = gen.name
@@ -124,7 +124,7 @@ fetch(url)
          id = peli.id
 
          a = "<a href='detallePelis.html?id="+ id + "'>"
-           a += "<img src='" + urlImagen + poster + "'>"
+           a += "<p><img src='" + urlImagen + poster + "'></p>"
            a += "<p class='movieTitle'>" + title + "</p>"
          a += "</a>"
 
@@ -139,30 +139,81 @@ fetch(url)
       console.log("Error"+ error);
     })
 
-// IDEA: JS DE LOS CORAZONES Y DETALLES PELIS
-var botoncorazon = document.querySelector("img.corazonVacio")
-console.log(botoncorazon);
-botoncorazon.addEventListener("click",function(){
-  document.querySelector("img.corazonVacio").style.display = "none";
-  document.querySelector("img.corazonLleno").style.display="block";
-})
 
-var botoncorazonlleno = document.querySelector("img.corazonLleno")
-console.log(botoncorazonlleno);
-botoncorazonlleno.addEventListener("click",function(){
-  document.querySelector("img.corazonLleno").style.display = "none";
-  document.querySelector("img.corazonVacio").style.display="block";
-})
+// IDEA: pelis favs
+
+// IDEA: BLOQUE 1
+
+// Obtengo la info de local storage
+var json = localStorage.getItem("pelisPrefes")
+
+// Si ya habia favoritos..
+if (json != null) {
+  // Desempaquetar el string JSON
+  var objLit = JSON.parse(json)
+
+  // De todo el objeto literal me interesa EL ARRAY
+  var favoritos = objLit.carac
+
+} else {
+  // Si no habia creo el listado como VACIO
+  var favoritos = []
+}
+
+// IDEA: BLOQUE 2
+
+if (favoritos.indexOf(id) == -1) {
+
+  var botoncorazon = document.querySelector("img.corazonVacio")
+  console.log(botoncorazon);
+  botoncorazon.addEventListener("click",function(){
+    document.querySelector("img.corazonVacio").style.display = "none";
+    document.querySelector("img.corazonLleno").style.display="block";
+  })
+  // Si no era favorita digo "Queres agregarla?"
+
+} else {
+  // Si ya era, digo "Queres quitarla?"
+  var botoncorazonlleno = document.querySelector("img.corazonLleno")
+  console.log(botoncorazonlleno);
+  botoncorazonlleno.addEventListener("click",function(){
+    document.querySelector("img.corazonLleno").style.display = "none";
+    document.querySelector("img.corazonVacio").style.display="block";
+  })
+}
+
+// IDEA: BLOQUE 3
+
+// Si la peli AUN NO ES FAVORITA
+if (favoritos.indexOf(id) == -1) {
+  // La agrega
+  favoritos.push(id)
+  } else {
+  // La quita
+  var posicion = favoritos.indexOf(id)
+  favoritos.splice(posicion,1)
+
+}
+
+// IDEA: BLOQUE 4
+
+// Lo vuelvo a pasar a OBJ literal
+
+obj = {
+  carac: favoritos
+}
+
+// LO transformo en JSON
+json = JSON.stringify(obj)
+
+// Lo guardo en Local Storage
+localStorage.setItem("pelisPrefes", json)
+
+console.log(localStorage);
 
 
-// cuando apreta el a de corazon vacio, si ya hizo log in, lo tiene que
-// mandar a la pagina de pelisprefes, y sino a la pagina de log in o home (?).
-//
-// ademas, si ya esta loggueado, debe almacenar esa pelicula en la pagina de
-// pelisfavs y deberia llenarse el corazonLleno
-//
-// si no tiene peliculas favoritas y entra a pelis favs deberia aparecer
-// un cartel
+
+
 
 
 

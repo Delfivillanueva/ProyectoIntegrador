@@ -6,15 +6,34 @@ window.addEventListener("load",function(){
 console.log(arrayDePelisPrefes);
 for (var i = 0; i < arrayDePelisPrefes.length; i++) {
   var idPelisPrefes= arrayDePelisPrefes[i]
-  console.log(idPelisPrefes);
   var url= "https://api.themoviedb.org/3/movie/"+ idPelisPrefes+ "?api_key=5d02a3447f4e9a0a8eaf7b743846e766&language=en-US"
   fetch(url)
   .then(function(response){
     return response.json();
   })
   .then(function(data){
-   console.log(data);
-   
+   var ul= document.querySelector('ul.pelisFavs');
+   var li="";
+   var a = "";
+   var title = "";
+   var poster = "";
+   var id = "";
+   var urlImagen = "https://image.tmdb.org/t/p/original"
+   var arrayDePeliculas= data;
+   var array=0;
+   for (var i = 0; i < arrayDePeliculas.length; i++) {
+     title = arrayDePeliculas[i].title;
+     id= arrayDePeliculas[i].id;
+     poster= arrayDePeliculas[i].poster_path
+
+     a = "<a href='pelisprefes.html?id="+ id + "'>"
+       a += "<img src='" + urlImagen + poster + "'>"
+       a += "<p class='movieTitle'>" + title + "</p>"
+     a += "</a>"
+     ul.innerHTML+= "<li class='mySlides1'>" + a + "</li>"
+   }
+   showSlides(1, 0);
+
 
   })
   .catch(function(error){

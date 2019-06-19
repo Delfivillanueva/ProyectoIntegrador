@@ -124,8 +124,8 @@ fetch(url)
          id = peli.id
 
          a = "<a href='detallePelis.html?id="+ id + "'>"
-           a += "<p><img src='" + urlImagen + poster + "'></p>"
            a += "<p class='movieTitle'>" + title + "</p>"
+           a += "<p><img src='" + urlImagen + poster + "'></p>"
          a += "</a>"
 
          ul.innerHTML += "<li class='mySlides1'>" + a + "</li>"

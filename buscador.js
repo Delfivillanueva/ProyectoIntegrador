@@ -13,7 +13,8 @@ return response.json()
 .then(function(data){
 
     console.log(data)
-    var ul= document.querySelector("ul")
+
+    var ul= document.querySelector("ul.genbro")
     var li = "";
     var p =  "";
     var a = "";

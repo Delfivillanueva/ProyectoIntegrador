@@ -9,8 +9,9 @@ body {
 ul{
   /* overflow: hidden; */
   padding-left: 0;
-  padding-top: 170px; 
+
 }
+
 
 h1{
   font-family: 'ABeeZee';
@@ -22,10 +23,13 @@ h1{
   margin-left:0;
 }
 
-
+ul.genbro{
+  padding-top: 170px; 
+}
 li{
   /* float: left; */
   list-style-type: none;
+
   /* margin-right:4%;
   margin-bottom: 2.5%;
   padding-left: 35px; */

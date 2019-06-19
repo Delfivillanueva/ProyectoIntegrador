@@ -12,6 +12,7 @@ for (var i = 0; i < arrayDePelisPrefes.length; i++) {
     return response.json();
   })
   .then(function(data){
+
    var ul= document.querySelector('ul.pelisFavs');
    var li="";
    var a = "";
@@ -21,24 +22,24 @@ for (var i = 0; i < arrayDePelisPrefes.length; i++) {
    var urlImagen = "https://image.tmdb.org/t/p/original"
    var arrayDePeliculas= data;
    var array=0;
-   for (var i = 0; i < arrayDePeliculas.length; i++) {
-     title = arrayDePeliculas[i].title;
-     id= arrayDePeliculas[i].id;
-     poster= arrayDePeliculas[i].poster_path
 
-     a = "<a href='pelisprefes.html?id="+ id + "'>"
+     title = arrayDePeliculas.title;
+     id= arrayDePeliculas.id;
+     poster= arrayDePeliculas.poster_path
+
+     a = "<a href='detallePelis.html?id="+ id + "'>"
        a += "<img src='" + urlImagen + poster + "'>"
        a += "<p class='movieTitle'>" + title + "</p>"
      a += "</a>"
      ul.innerHTML+= "<li class='mySlides1'>" + a + "</li>"
-   }
+
    showSlides(1, 0);
 
 
   })
-  .catch(function(error){
-    console.log("Error"+ error);
-  })
+  // .catch(function(error){
+  //   console.log("Error"+ error);
+  // })
 
 
 }

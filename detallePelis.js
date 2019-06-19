@@ -163,55 +163,64 @@ else {
 
 // IDEA: BLOQUE 2
 
-if (favoritos.indexOf(id) == -1) {
+if (favoritos.indexOf(id) != -1) {
 
-  var botoncorazon = document.querySelector("img.corazonVacio")
-  console.log(botoncorazon);
-  botoncorazon.addEventListener("click",function(){
+
     document.querySelector("img.corazonVacio").style.display = "none";
     document.querySelector("img.corazonLleno").style.display="block";
-  })
-  // Si no era favorita digo "Queres agregarla?"
-
-} else {
-  // Si ya era, digo "Queres quitarla?"
-  var botoncorazonlleno = document.querySelector("img.corazonLleno")
-  console.log(botoncorazonlleno);
-  botoncorazonlleno.addEventListener("click",function(){
-    document.querySelector("img.corazonLleno").style.display = "none";
-    document.querySelector("img.corazonVacio").style.display="block";
-  })
-}
-
-// IDEA: BLOQUE 3
-
-// Si la peli AUN NO ES FAVORITA
-if (favoritos.indexOf(id) == -1) {
-  // La agrega
-  favoritos.push(id)
-  } else {
-  // La quita
-  var posicion = favoritos.indexOf(id)
-  favoritos.splice(posicion,1)
 
 }
 
-// IDEA: BLOQUE 4
+document.querySelector("img.corazonVacio").onclick = function() {
+  // IDEA: BLOQUE 3
 
-// Lo vuelvo a pasar a OBJ literal
+    favoritos.push(id)
 
-obj = {
-  carac: favoritos
+
+  // IDEA: BLOQUE 4
+
+  // Lo vuelvo a pasar a OBJ literal
+
+  obj = {
+    carac: favoritos
+  }
+
+  // LO transformo en JSON
+  json = JSON.stringify(obj)
+
+  // Lo guardo en Local Storage
+  localStorage.setItem("pelisPrefes", json)
+
+  document.querySelector("img.corazonVacio").style.display = "none";
+  document.querySelector("img.corazonLleno").style.display="block";
 }
 
-// LO transformo en JSON
-json = JSON.stringify(obj)
+document.querySelector("img.corazonLleno").onclick = function() {
+  // IDEA: BLOQUE 3
 
-// Lo guardo en Local Storage
-localStorage.setItem("pelisPrefes", json)
 
-console.log(localStorage);
+    // La quita
+    var posicion = favoritos.indexOf(id)
+    favoritos.splice(posicion,1)
 
+
+  // IDEA: BLOQUE 4
+
+  // Lo vuelvo a pasar a OBJ literal
+
+  obj = {
+    carac: favoritos
+  }
+
+  // LO transformo en JSON
+  json = JSON.stringify(obj)
+
+  // Lo guardo en Local Storage
+  localStorage.setItem("pelisPrefes", json)
+
+  document.querySelector("img.corazonVacio").style.display = "block";
+  document.querySelector("img.corazonLleno").style.display="none";
+}
 
 
 

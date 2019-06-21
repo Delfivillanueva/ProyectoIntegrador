@@ -37,9 +37,9 @@ for (var i = 0; i < arrayDePelisPrefes.length; i++) {
 
 
   })
-  // .catch(function(error){
-  //   console.log("Error"+ error);
-  // })
+   .catch(function(error){
+     console.log("Error"+ error);
+   })
 
 
 }

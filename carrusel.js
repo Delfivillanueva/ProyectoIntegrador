@@ -1,8 +1,5 @@
 
 function plusSlides(n, no) {
-  if (no===2) {
-    console.log("proxpeliculas");
-  }
   showSlides(slideIndex[no] += n, no);
 }
 
@@ -29,5 +26,5 @@ function plusSlides(n, no) {
     // IDEA: oculta TODO
     console.log(x[slideIndex[no]-1]);
     x[slideIndex[no]-1].style.display = "block";
-    // IDEA: del el elementoque estoy muestro el que aprete el boton, es -1 porque es un array y es el primero.
+    // IDEA: del el elemento que estoy muestro el que aprete el boton, es -1 porque es un array y es el primero.
   }

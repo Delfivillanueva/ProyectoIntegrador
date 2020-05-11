@@ -223,15 +223,4 @@ document.querySelector("img.corazonLleno").onclick = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 })
